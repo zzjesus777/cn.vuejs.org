@@ -31,6 +31,9 @@ Mustache 标签将会被替代为对应数据对象上 `msg` 属性的值。无�
 ### 原始 HTML
 
 双大括号会将数据解释为普通文本，而非 HTML 代码。为了输出真正的 HTML，你需要使用 `v-html` 指令：
+``` html
+rawHtml = '<span style="color: red">This should be red.</span>'
+```
 
 ``` html
 <p>Using mustaches: {{ rawHtml }}</p>
